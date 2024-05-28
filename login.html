@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>User login</h1>    
+    </header>
+    <div class="container">
+        <h2>User Login</h2>
+        <form action="#">
+
+            <div class="forms">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="enter username" onkeyup="nameValidation()">
+                <span id="uname"></span>
+            </div>
+
+            <div class="forms">
+                <label for="password">Password:</label>
+                <input type="password" id="password"  placeholder="enter password" onkeyup="passwordValidation()">
+                <span id="passw"></span>
+            </div>
+
+            <div class="forms">
+                <input type="submit" value="Login" onclick="return validateForm()">
+                <span id="sub"></span>
+            </div>
+        </form>
+
+        
+    </div>
+</body>
+</html>

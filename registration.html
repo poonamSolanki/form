@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>User Registration</h1>
+    </header>
+
+    <div class="container">
+
+        <h2>User Registration</h2>
+
+        <form>
+
+            <div class="forms">
+                <label for="username">Username:</label>
+                <input type="text" id="username"  placeholder="enter username" onkeyup="nameValidation()" >
+                <span id="uname"></span>
+            </div>
+
+            <div class="forms">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" onkeyup="dobValidation()" >
+                <span id="dateob"></span>
+            </div>
+
+            <div class="forms">
+                <label for="email">Email:</label>
+                 <input type="email" id="email"  placeholder="enter your email" onkeyup="emailValidation()"> 
+                <span id="mails"></span>
+            </div>
+
+            <div class="forms">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="enter contact no. (without country code)" onkeyup="phoneValidation()">
+                <span id="number"></span>
+            </div>
+
+            <div class="forms">
+                <label for="password">Password:</label>
+                <input type="password" id="password"  placeholder="enter your password" onkeyup="passwordValidation()" >
+                <span id="passw"></span>
+            </div>
+
+            <div class="forms">
+                <label for="password">Confirm Password:</label>
+                <input type="password" id="confirm"  placeholder="enter same password" onkeyup="confirmValidation(this.value)" >
+                <span id="conpassw"></span>
+            </div>
+
+            <div class="forms">
+                <input type="submit" id="submit" value="Register" onclick="return validateForm()">
+                <span id="sub"></span>
+            </div>
+            
+        </form>
+    </div>  
+    <script src="registration.js"></script> 
+</body>
+</html>
